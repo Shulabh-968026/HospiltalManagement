@@ -1,0 +1,50 @@
+{% extends 'hospitaltemplete1.html' %}
+<html>
+<head>
+<title>Patient Form</title>
+<link href="../static/css/bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+{% block m1 %}
+<div class="container container-fluid">
+     <h1>Patient Form</h1>
+    <form action="#" method="post" class="was-validated">
+    <div class="form-group">
+    Name:
+    <input type="text" class="form-control" name="name" required>
+    </div>
+    <div class="form-group">
+    Bed Allot:
+    <input type="text" class="form-control" name="bedallot" required>
+    </div>
+    <div class="form-group">
+    Doctor Assign:
+    <input type="text" class="form-control" name="doctorassign" required>
+    </div>
+    <div class="form-group">
+    Deceise:
+    <input type="text" class="form-control" name="deceise" required>
+    </div>
+    <div class="form-group">
+    Address:
+    <textarea class="form-control" name="address"></textarea>
+    </div>
+    <div class="form-group">
+    Contact:
+    <input type="text" class="form-control" name="contact">
+    </div><br>
+    </br>
+        <div class="form-group">
+        Date:
+    <input type="date" class="form-control" name="date">
+    </div><br>
+        <div class="form-group">
+    Hospital Name:
+    <input type="text" class="form-control" name="hospitalname">
+    </div><br>
+    <button type="submit" class="btn btn-primary" style="margin-left:100px">Add Patient</button>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

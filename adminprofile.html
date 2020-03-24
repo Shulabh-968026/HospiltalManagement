@@ -1,0 +1,21 @@
+{% extends 'admintemplete.html' %}
+{% block m1 %}
+<body>
+{% if photo=="no" %}
+<p><a href="adminphoto">upload photo</a> </p>
+{% else %}
+<img src="../static/photos/{{ photo }}" width="100px" height="100px"/><br>
+<p> <a href="change_adminphoto">change photo</a> </p>
+{% endif %}
+<h1>Admin Profile</h1>
+{% if data %}
+<h3>Name:{{ data[0] }}</h3>
+<h3>Address:{{ data[1] }}</h3>
+<h3>Contact:{{ data[2] }}</h3>
+<h3>Email:{{ data[3] }}</h3>
+{% elif msg %}
+<h1>{{ msg }}</h1>
+{% endif %}
+
+</body>
+{% endblock %}

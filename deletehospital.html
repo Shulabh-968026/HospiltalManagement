@@ -1,0 +1,12 @@
+{% extends 'admintemplete.html' %}
+{% block m1 %}
+<h1>Delete Record</h1>
+<form method="post" action="deletehospital">
+    Email:<input type="email" name="email" ><br><br>
+    <input type="submit" name="b1" value="delete">
+</form>
+{% if msg %}
+<h2>{{ msg }}</h2>
+{% endif %}
+<a href="adminhome">back to home page</a>
+{% endblock %}

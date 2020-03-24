@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Hospital Templetes</title>
+<link href="../static/css/bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../static/css/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<style>
+li{
+	width:200;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid" style="width:100%;
+	height:200px;
+	line-height:200px;
+	text-align:center;
+	background-color:#39F;">
+ <h1 style="font-size:150px;text-shadow:0px 0px 10px #3333CC;">HOSPITAL</h1>
+</div>
+<div class="container-fluid bg-dark" style="height:60px;">
+ <nav class="navbar bg-dark navbar-expand">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="hospitalhome">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="profile">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="changepassword">Change Password</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="doctorreg">Doctor Reg</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="showdoctors">Doctor Show</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="patientreg">Patent Entry</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="medicalreg">Medical Store</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="logout">Logout</a>
+    </li>
+    <!--<li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>-->
+  </ul>
+</nav>
+</div>
+<div class="container-fluid" style="min-height:500px">
+ <div class="row">
+   <div class="col-12">
+   {% block m1 %}
+   {% endblock %}
+   </div>
+ </div>
+</div>
+<div class="container-fluid bg-dark text-white" style="height:80px">
+    <h3 style="text-align:center; line-height:80px">@2019 copyRight by Hospital</h3>
+<div>
+
+</body>
+</html>

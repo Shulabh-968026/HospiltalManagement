@@ -1,0 +1,16 @@
+{% extends 'hospitaltemplete1.html' %}
+{% block m1 %}
+{% if data %}
+<form method="post" action="editdoctor1">
+    Name::<input type="text" name="name" value="{{ data[0] }}"><br><br>
+    Specility::<input type="text" name="specility" value="{{ data[1] }}"><br><br>
+    Timing::<input type="time" name="time" value="{{ data[2] }}"><br><br>
+    Exprience::<input type="text" name="exprience" value="{{ data[3] }}"><br><br>
+    Days::<input type="text" name="days" value="{{ data[4] }}"><br><br>
+    Email::<input readonly type="text" name="email" value="{{ data[5] }}"><br><br>
+    <input type="submit" name="b1" value="Edit and Save">
+</form>
+{% elif msg %}
+<h2>{{ msg }}</h2>
+{% endif %}
+{% endblock %}

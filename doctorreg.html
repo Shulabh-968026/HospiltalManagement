@@ -1,0 +1,13 @@
+{% extends 'hospitaltemplete1.html' %}
+{% block m1 %}
+<h1>Doctor Registration</h1>
+<form action="doctorreg" method="post">
+    Name::<input type="text" name="name" required><br><br>
+    Specility:<input type="text" name="specility" required><br><br>
+    timing:<input type="time" name="time" required><br><br>
+    Exprience:<input type="text" name="exprience"><br><br>
+    Days:<input type="text" name="days" required><br><br>
+    Email:<input type="email" name="email" required><br><br>
+    <input type="submit" name="b1" value="Register">
+    </form>
+{% endblock %}

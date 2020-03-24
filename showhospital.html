@@ -1,0 +1,20 @@
+{% extends 'admintemplete.html' %}
+{% block m1 %}
+<h1>Hospitals Lists</h1>
+{% if data %}
+   {% for i in data %}
+       <h1>Name::{{ i[0] }}</h1><br>
+        <p>Specility::{{ i[1] }}<br>
+           Address::{{ i[2] }}<br>
+           Contact::{{ i[3] }}<br>
+           AC_Beds::{{ i[4] }}<br>
+           NON_AC_Beds::{{ i[5] }}<br>
+           Email::{{ i[6] }}
+
+        </p>
+   {% endfor %}
+{% elif msg %}
+<h1>{{ msg }}</h1>
+{% endif %}<br>
+<a href="adminhome">back to home page</a>
+{% endblock %}

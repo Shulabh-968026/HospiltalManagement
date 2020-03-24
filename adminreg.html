@@ -1,0 +1,12 @@
+{% extends 'admintemplete.html' %}
+{% block m1 %}
+<h1>Admin Registration</h1>
+<form method="post" action="adminreg">
+    Name::<input type="text" name="name"><br><br>
+    Address::<textarea name="textarea"></textarea><br><br>
+    Contact::<input type="text" name="contact"><br><br>
+    Email::<input type="email" name="email"><br><br>
+    password::<input type="password" name="password"><br><br>
+    <input type="submit" name="b1" value="submit">
+</form>
+{% endblock %}

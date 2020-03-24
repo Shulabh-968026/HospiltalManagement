@@ -1,0 +1,15 @@
+{% extends 'admintemplete.html' %}
+{% block m1 %}
+<body style="background-color:#3CF">
+<h1>Admins</h1><hr>
+{% if data %}
+   {% for i in  data %}
+       <p style="font-size:25px">Name::{{ i[0] }}<br>
+       Address::{{ i[1] }}<br>
+       Contact::{{ i[2] }}<br>
+       Email::{{ i[3] }}<hr>
+       </p>
+   {% endfor %}
+{% endif %}
+</body>
+{% endblock %}

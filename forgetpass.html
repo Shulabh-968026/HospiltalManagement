@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forget Password</title>
+    <link href="../static/css/bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+{% if msg %}
+<h3>{{ msg }}</h3>
+{% endif %}
+<div class="container-fluid">
+<h1>Password Generator Form</h1>
+    <form action="forgetpass" method="post" class="was-validated">
+    <div class="form-group">
+    <h3>Email:</h3>
+    <input type="email" class="form-control" name="email" required>
+    </div>
+        <button type="submit" class="btn btn-primary" style="margin-left:100px">Submit</button>
+</form>
+</div>
+</body>
+</html>

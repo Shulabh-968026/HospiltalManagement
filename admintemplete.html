@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Admin Detail</title>
+<link rel="stylesheet" href="../static/css/admintemplete.css" type="text/css">
+</head>
+<body>
+<div id="main">
+   <div id="wrapper">
+      <div id="header">
+      <h1 id="logo">ADMIN </h1>
+      </div>
+      <div id="menu">
+      <ul>
+      <li><a href="adminhome">HOME</a></li>
+      <li><a href="profile">Profile</a></li>
+      <li><a href="showadmins">Show Admins</a></li>
+      <li><a href="hospitalreg">Hospital Reg.</a></li>
+      <li><a href="showhospitals">Show Hospitals</a></li>
+      <li><a href="edithospital">Edit Hospital</a></li>
+      <li><a href="deletehospital">Delete Hospital</a></li>
+      <li><a href="changepass">Change Password Admin</a></li>
+           <li><a href="logout">Log Out</a> </li>
+      </ul>
+     </div>
+      <div id="middle">
+          {% block m1 %}
+          {% endblock %}
+      </div>
+     <div id="foot">
+      <h1>copy right &copy; by Shulabh Dixit 2019</h1>
+      </div>  
+   </div>
+</div> 
+</body>
+</html>

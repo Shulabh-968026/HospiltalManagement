@@ -1,0 +1,15 @@
+{% extends 'admintemplete.html' %}
+{% block m1 %}
+<h1>Hospital Registration</h1>
+<form method="post" action="hospitalreg">
+    Name:<input type="text" name="name"><br><br>
+    Specility:<input type="text" name="specility"><br><br>
+    Address:<input type="text" name="address"><br><br>
+    Contact:<input name="contact" type="text"><br><br>
+    Ac Beds:<input type="text" name="acbeds"><br><br>
+    Non ac Beds:<input type="text" name="nonacbeds"><br><br>
+    Email:<input type="email" name="email"><br><br>
+    password:<input type="password" name="password"><br><br>
+    <input type="submit" name="b1" value="Register">
+</form>
+{% endblock %}

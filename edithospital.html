@@ -1,0 +1,18 @@
+{% extends 'admintemplete.html' %}
+{% block m1 %}
+<h1>Edit Hospital</h1>
+{% if data %}
+<form method="post" action="edithospital1">
+    Name::<input type="text" name="name" value="{{ data[0] }}"><br><br>
+    Specility::<input type="text" name="specility" value="{{ data[1] }}"><br><br>
+    Address::<input type="text" name="address" value="{{ data[2] }}"><br><br>
+    Contact::<input type="text" name="contact" value="{{ data[3] }}"><br><br>
+    AC_Beds::<input type="text" name="acbeds" value="{{ data[4] }}"><br><br>
+    Non_Ac_Beds::<input type="text" name="nonacbeds" value="{{ data[5] }}"><br><br>
+    Email::<input readonly type="text" name="email" value="{{ data[6] }}"><br><br>
+    <input type="submit" name="b1" value="Edit and save">
+</form>
+{% elif msg %}
+<h2>{{ msg }}</h2>
+{% endif %}
+{% endblock %}

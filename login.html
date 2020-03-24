@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>log in</title>
+<link rel="stylesheet" href="../static/css/login.css" type="text/css">
+</head>
+<body>
+<div class="header">
+ <ul>
+  <li><a href="#">Admin Login</a></li>
+  <li><a href="#">Hospital Login</a></li>
+  </ul>
+  <div class="main">
+      <div class="login">
+        <form method="post" action="login">
+            Email:<br>
+            <input class="in"type="email" name="email" /><br><br>
+            Password:<br>
+            <input class="in" type="password" name="password" /><br><br>
+            <input id="submit" type="submit" name="b1" value="Login"/>
+            {% if msg %}
+            <p style="font-size:15px;color:red">*{{ msg }}</p>
+            {% endif %}
+            <p style="font-size:20px">Are you forget the password?<a href="forget">forget password</a></p>
+        </form>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

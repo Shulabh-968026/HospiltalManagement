@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Hospital </title>
+<link href="../static/css/hospitaltemplate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+   <div class="wrapper">
+      <div class="header">
+      <h1>HOSPITAL</h1>
+      </div>
+      <div class="menu">
+      <ul>
+      <li><a href="hospitalhome">HOME</a></li>
+      <li><a href="profile">Hospital profile</a></li>
+      <li><a href="changepass">Change H. Pass.</a></li>
+      <li><a href="doctorreg">Doctor Reg.</a></li>
+      <li><a href="showdoctors">Show Doctors</a></li>
+      <li><a href="editdoctor">Edit Doctor</a></li>
+      <li><a href="deletedoctor">Delete Doctor</a></li>
+      <li><a href="medicalreg">Medical Store</a></li>
+      <!--<li><a href="logout">Log Out</a> </li>-->
+      </ul>
+      </div>
+      <div class="middle">
+
+
+            {% block m1 %}
+            {% endblock %}
+         </div>
+
+
+      <div class="footer">
+      <h1>copy right &copy;by hospital 2019</h1>
+      </div>
+   </div>
+</div>
+</body>
+</html>
